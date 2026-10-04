@@ -1,3 +1,5 @@
+a{ color: red; }
+
 /* ---------------------------
  style.css (Student Tasks Version)
  Selectors + Box Model + Variables
@@ -97,6 +99,8 @@ body {
     margin: 0 6px;
 }
 
+
+
 /* TODO (CSS #1): Nav links as buttons
  Target: .site-nav a (the clickable element)
  Typical values:
@@ -112,10 +116,11 @@ body {
  - font-weight (normal/bold)
  - transition: smooth hover effect (often background-color 0.2s–0.3s)
 */
+
+/*
 .site-nav a {
     display: inline-block;
     
-    /* add more properties here */
     color: var(--white);
     text-decoration: none;
     padding: 8px 12px;
@@ -123,7 +128,7 @@ body {
     background-color: rgba(0, 6, 55, 0.333);
     font-weight: bold;
     transition: background-color 0.3s ease;
-}
+} */
 
 /* TODO (CSS #2): Hover effect
  Target: .site-nav a:hover
@@ -132,10 +137,13 @@ body {
  - optionally adjust text color (if contrast becomes poor)
  - optionally change underline/border effect instead of background (design choice)
 */
+
+/*
 .site-nav a:hover {
-    /* add properties here */
+   
     background-color: rgba(48, 72, 253, 0.533);
-}
+} 
+*/
 
 /* TODO (CSS #3): Active link highlight
  Target: .site-nav a.active
@@ -147,10 +155,29 @@ body {
  - stronger font-weight
  Keep it visually consistent with your hover style.
 */
+
+/*
 .site-nav a.active {
-    /* add properties here */
     border-bottom: 2px solid #d9def6;
+}*/
+
+.site-nav a {
+    color: var(--white);
+    text-decoration: none;
+    padding: 10px 16px;
+    display: inline-block;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.12);
 }
+
+.site-nav a:hover {
+    background: var(--accent);
+}
+
+.site-nav a.active {
+    background: rgba(255, 255, 255, 0.24);
+}
+
 
 /* Two-column layout (Flexbox)
  You may keep this as-is. CSS Layouts will be taught be in a future lecture
@@ -203,14 +230,23 @@ body {
  Optional:
  - box-shadow for depth (subtle; do not overdo)
 */
+
+/*
 .card {
-    /* add properties here */
     background: var(--white);
     padding: 18px;
     margin-bottom: 16px;
     border: 1px solid var(--border);
     border-radius: 8px;
-    
+
+}*/
+
+.card {
+    background: var(--white);
+    padding: 16px;
+    margin-bottom: 15px;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
 }
 
 /* TODO (CSS #6): Meta line
@@ -293,11 +329,11 @@ body {
  - a subtle background tint
  - a stronger border-left accent
  */
- border:#000 solid 2px;
- border-width: 2px;
- padding: 20px;
- background-color: var(--white-tint);
- border-left: 6px solid #00103c;
+    border: #000 solid 2px;
+    border-width: 2px;
+    padding: 20px;
+    background-color: var(--white-tint);
+    border-left: 6px solid #00103c;
 }
 
 /* TODO (CSS #10): Notice styling
@@ -326,4 +362,13 @@ body {
     text-align: center;
     padding: 18px 10px;
     color: #555;
+}
+
+.theme-dark {
+    --bg: #0f172a;
+    --text: #e5e7eb;
+    --primary: #111827;
+    --accent: #38bdf8;
+    --white: #111827;
+    --border: #334155;
 }
