@@ -114,7 +114,15 @@ body {
 */
 .site-nav a {
     display: inline-block;
+    
     /* add more properties here */
+    color: var(--white);
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 999px;
+    background-color: rgba(0, 6, 55, 0.333);
+    font-weight: bold;
+    transition: background-color 0.3s ease;
 }
 
 /* TODO (CSS #2): Hover effect
@@ -126,6 +134,7 @@ body {
 */
 .site-nav a:hover {
     /* add properties here */
+    background-color: rgba(48, 72, 253, 0.533);
 }
 
 /* TODO (CSS #3): Active link highlight
@@ -140,6 +149,7 @@ body {
 */
 .site-nav a.active {
     /* add properties here */
+    border-bottom: 2px solid #d9def6;
 }
 
 /* Two-column layout (Flexbox)
@@ -173,6 +183,12 @@ body {
 */
 .sidebar {
     /* add properties here */
+    background: var(--white);
+    padding: 12px;
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    background-color: var(--white-tint);
+
 }
 
 /* TODO (CSS #5): Card styling (Box Model)
@@ -189,6 +205,12 @@ body {
 */
 .card {
     /* add properties here */
+    background: var(--white);
+    padding: 18px;
+    margin-bottom: 16px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    
 }
 
 /* TODO (CSS #6): Meta line
@@ -201,6 +223,9 @@ body {
 */
 .meta {
     /* add properties here */
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 10px;
 }
 
 /* TODO (CSS #7): Tag “pill” styling
@@ -221,6 +246,12 @@ body {
 .tag {
     display: inline-block;
     /* add more properties here */
+    padding: 4px 10px;
+    margin: 4px;
+    border: 1px solid #ccc;
+    border-radius: 999px;
+    background-color: var(--white);
+    color: var(--text);
 }
 
 /* TODO (CSS #8): Video container
@@ -234,6 +265,10 @@ body {
 */
 .video-wrap {
     /* add properties here */
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    overflow: hidden;
+    background: #000;
 }
 
 .video-wrap iframe {
@@ -258,6 +293,11 @@ body {
  - a subtle background tint
  - a stronger border-left accent
  */
+ border:#000 solid 2px;
+ border-width: 2px;
+ padding: 20px;
+ background-color: var(--white-tint);
+ border-left: 6px solid #00103c;
 }
 
 /* TODO (CSS #10): Notice styling
@@ -273,6 +313,11 @@ body {
 */
 .notice {
     /* add properties here */
+    border: 1px dashed #bbb;
+    padding: 12px;
+    border-radius: 16px;
+    background-color: var(--white-tint);
+    color: #464646;
 }
 
 /* Footer
