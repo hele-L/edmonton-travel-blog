@@ -372,3 +372,7 @@ body {
     --white: #111827;
     --border: #334155;
 }
+
+.card a{
+    color: #38bdf8;
+}
